@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'disk_name'=>'local'
+    'disk_name'=>'local',
 ];
