@@ -15,7 +15,7 @@ class LaravelDiskMonitorCommand extends Command
     public function handle()
     {
         $this->comment("Record Metrics");
-        $disk_name = Config('laravel-disk-monitor.disk_name');
+        $disk_name = Config('laravel-disk-monitor.disk_name.0');
         $file_count = count(Storage::disk($disk_name)->allFiles());
         DiskMonitorEntry::create([
             "disk_name" => $disk_name,
